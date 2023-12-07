@@ -54,9 +54,9 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#manipulando-venvs">Manipulando Venvs</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#criando-e-ativando-uma-venv">Criando e ativando uma Venv</a>
+    <li class="toctree-l3"><a class="reference internal" href="#criar-e-ativar">Criar e ativar</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#desativar-e-excluir-uma-venv">Desativar e excluir uma Venv</a>
+    <li class="toctree-l3"><a class="reference internal" href="#desativar-e-excluir">Desativar e excluir</a>
     </li>
         </ul>
     </li>
@@ -95,11 +95,11 @@
 <h3 id="como-funcionam">Como funcionam</h3>
 <p>Ao criar uma Venv, é criada uma pasta que contém uma cópia do Python padrão do sistema, contendo os arquivos e pacotes default do Python. A instalação dos pacotes é exclusivamente feita na pasta da Venv, isoladamente das outras Venvs e dos pacotes instalados no sistema. Cada Venv é relacionada a um projeto.</p>
 <h3 id="tipos-de-venvs">Tipos de Venvs</h3>
-<p>Desde a versão 3.3, o <a href="https://docs.python.org/3/library/venv.html">venv</a> vem por padrão na instalação do Python, este é o modo mais simples de criar uma Venv, todos os pacotes são instalados através do <a href="https://pypi.org/project/pip/">pip</a>. Existem outros pacotes para manipular Venvs, como exemplo o <a href="https://virtualenv.pypa.io/en/latest/">virtualenv</a> que é uma versão mais completa do venv, e o <a href="https://github.com/pyenv/pyenv">pyenv</a> que é mais usado para criação de Venvs usando diferentes versões do Python. Outra ferramenta que pode ser usada é o Poetry, que gerencia as dependências e os pacote de um projeto usando Venvs, facilitando e organizando o processo. Saiba mais em <a href="https://python-poetry.org/">python-poetry.org</a> </p>
+<p>Desde a versão 3.3, o <a href="https://docs.python.org/3/library/venv.html">venv</a> vem por padrão na instalação do Python, este é o modo mais simples de criar uma Venv, todos os pacotes são instalados através do <a href="https://pypi.org/project/pip/">pip</a>. Existem outros pacotes para manipular Venvs, como exemplo o <a href="https://virtualenv.pypa.io/en/latest/">virtualenv</a> que é uma versão mais completa do venv, e o <a href="https://github.com/pyenv/pyenv">pyenv</a> que é mais usado para criação de Venvs usando diferentes versões do Python. Outra ferramenta que pode ser usada é o Poetry, que gerencia as dependências e os pacote de um projeto usando Venvs, facilitando e organizando o processo. Para saber mais acesse o <a href="https://albertogiannini.github.io/poetryGuide.github.io/">Guia de uso do Poetry</a> </p>
 <h2 id="manipulando-venvs">Manipulando Venvs</h2>
-<h3 id="criando-e-ativando-uma-venv">Criando e ativando uma Venv</h3>
+<h3 id="criar-e-ativar">Criar e ativar</h3>
 <p>Inicialmente, para criar uma Venv basta usar <code>python -m venv nome-da-pasta</code>, será criada uma pasta dentro do diretório do projeto com o nome informado. Para acessar a Venv é preciso ativá-la usando   <code>.\nome-da-pasta-da- venv\Scripts\activate</code>. Após isso a Venv está pronta para ser usada, basta instalar os pacotes desejados e executar o projeto normalmente <code>python nome-do-arquivo.py</code>.</p>
-<h3 id="desativar-e-excluir-uma-venv">Desativar e excluir uma Venv</h3>
+<h3 id="desativar-e-excluir">Desativar e excluir</h3>
 <p>As Venvs podem ser desativadas usando <code>deactivate</code> e reativadas normalmente. Em outros casos para excluir uma Venv basta excluir a pasta referente no diterório do projeto.</p>
 <h2 id="documentacoes">Documentações</h2>
 <p><a href="https://docs.python.org/3/library/venv.html#creating-virtual-environments">docs.python.org/venv</a></p>
@@ -148,5 +148,5 @@
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2023-12-07 14:13:15.021146+00:00
+Build Date UTC : 2023-12-07 17:55:44.788911+00:00
 -->
