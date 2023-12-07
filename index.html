@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Guia Virtual Envs</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Guia Virtual Envs";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Guia Virtual Envs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">Guia Virtual Envs</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduzindo-as-venvs">Introduzindo as Venvs</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#o-que-e-uma-venv">O que é uma Venv</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#como-funcionam">Como funcionam</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tipos-de-venvs">Tipos de Venvs</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#manipulando-venvs">Manipulando Venvs</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#criar-e-ativar">Criar e ativar</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#desativar-e-excluir">Desativar e excluir</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#documentacoes">Documentações</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Guia Virtual Envs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Guia Virtual Envs</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="guia-virtual-envs">Guia Virtual Envs</h1>
+<h2 id="introduzindo-as-venvs">Introduzindo as Venvs</h2>
+<h3 id="o-que-e-uma-venv">O que é uma Venv</h3>
+<p>Virtual Envs são ambientes virtuais usados para isolar um projeto do sistema, com elas é possível isolar as dependências e usar versões diferentes do Python, o que possibilita realizar testes isolados, evitando conflitos entre pacotes e versões.</p>
+<h3 id="como-funcionam">Como funcionam</h3>
+<p>Ao criar uma Venv, é criada uma pasta que contém uma cópia do Python padrão do sistema, contendo os arquivos e pacotes default do Python. A instalação dos pacotes é exclusivamente feita na pasta da Venv, isoladamente das outras Venvs e dos pacotes instalados no sistema. Cada Venv é relacionada a um projeto.</p>
+<h3 id="tipos-de-venvs">Tipos de Venvs</h3>
+<p>Desde a versão 3.3, o <a href="https://docs.python.org/3/library/venv.html">venv</a> vem por padrão na instalação do Python, este é o modo mais simples de criar uma Venv, todos os pacotes são instalados através do <a href="https://pypi.org/project/pip/">pip</a>. Existem outros pacotes para manipular Venvs, como exemplo o <a href="https://virtualenv.pypa.io/en/latest/">virtualenv</a> que é uma versão mais completa do venv, e o <a href="https://github.com/pyenv/pyenv">pyenv</a> que é mais usado para criação de Venvs usando diferentes versões do Python. Outra ferramenta que pode ser usada é o Poetry, que gerencia as dependências e os pacote de um projeto usando Venvs, facilitando e organizando o processo. Para saber mais acesse o <a href="https://albertogiannini.github.io/poetryGuide.github.io/">Guia de uso do Poetry</a> </p>
+<h2 id="manipulando-venvs">Manipulando Venvs</h2>
+<h3 id="criar-e-ativar">Criar e ativar</h3>
+<p>Inicialmente, para criar uma Venv basta usar <code>python -m venv nome-da-pasta</code>, será criada uma pasta dentro do diretório do projeto com o nome informado. Para acessar a Venv é preciso ativá-la usando   <code>.\nome-da-pasta-da- venv\Scripts\activate</code>. Após isso a Venv está pronta para ser usada, basta instalar os pacotes desejados e executar o projeto normalmente <code>python nome-do-arquivo.py</code>.</p>
+<h3 id="desativar-e-excluir">Desativar e excluir</h3>
+<p>As Venvs podem ser desativadas usando <code>deactivate</code> e reativadas normalmente. Em outros casos para excluir uma Venv basta excluir a pasta referente no diterório do projeto.</p>
+<h2 id="documentacoes">Documentações</h2>
+<p><a href="https://docs.python.org/3/library/venv.html#creating-virtual-environments">docs.python.org/venv</a></p>
+<p><a href="https://virtualenv.pypa.io/en/latest/">virtualenv.pypa.io</a></p>
+<p><a href="https://github.com/pyenv/pyenv">github.com/pyenv</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.5.3
+Build Date UTC : 2023-12-07 18:11:17.004794+00:00
+-->
