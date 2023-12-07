@@ -1,0 +1,6 @@
+site_name: Guia Virtual Envs
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  nav_style: dark
